@@ -13,7 +13,7 @@ public class p3
 
 	void deposit(int amt)
 	{
-		if(amt>0)
+		if(amt<0)
 		{
 			System.out.println("inavlid amount");
 		}
