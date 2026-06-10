@@ -1,3 +1,7 @@
+/**
+ * The class "throw3" performs a division operation and prints the result, handling any exceptions that
+ * may occur and always printing a final message.
+ */
 class throw3
 {
 	public static void main(String args[])

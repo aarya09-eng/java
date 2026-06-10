@@ -1,0 +1,18 @@
+class p9 extends Thread
+{
+    public void run()
+    {
+        System.out.println("the thread task is executed by = "+Thread.currentThread().getName());
+    }
+    public static void main(String args[])
+    {
+        System.out.println("Hello printed by = "+Thread.currentThread().getName());
+
+        p9 p1 = new p9();
+        p1.start();
+        p9 p2 = new p9();
+        p2.start();
+        p9 p3 = new p9();
+        p3.start();
+    }
+}
