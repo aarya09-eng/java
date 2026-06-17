@@ -18,7 +18,7 @@ public class throw2
 		throw2 t = new throw2();
 		try
 		{
-			validate(19);
+			validate(19s);
 		}
 		catch(ArithmeticException e)
 		{

@@ -13,3 +13,5 @@ public class p4 extends Applet
 		g.fillOval(70,90,140,100);
 	}
 }
+
+//set PATH=C:\Program Files\Java\jdk1.8.0_202\bin;%PATH%
