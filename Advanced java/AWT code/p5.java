@@ -1,11 +1,11 @@
 import java.awt.*;
 import java.awt.event.*;
 
-class p4 extends Frame implements ActionListener
+class p5 extends Frame implements ActionListener
 {
     TextField tf;
 
-    p4()
+    p5()
     {
         tf = new TextField();
         tf.setBounds(60,50,170,20);
@@ -22,11 +22,12 @@ class p4 extends Frame implements ActionListener
 
     public void actionPerformed(ActionEvent e)
     {
-        tf.setText("Welcome");
+        String data = tf.getText();
+        System.out.println(data);
     }
 
     public static void main(String args[])
     {
-        new p4();
+        new p5();
     }
 }
