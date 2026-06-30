@@ -16,6 +16,7 @@ class p5 extends Frame implements ActionListener
 
         add(b);
         add(tf);
+        setSize(300,300);
         setLayout(null);
         setVisible(true);
     }
