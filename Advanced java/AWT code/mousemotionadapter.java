@@ -1,29 +1,29 @@
 import java.awt.*;
 import java.awt.event.*;
 
-public class mouseadapterexample extends MouseAdapter
+public class mousemotionadapter extends MouseMotionAdapter
 {
     Frame f;
 
-    mouseadapterexample()
+    mousemotionadapter()
     {
         f = new Frame("Mouse Adapter");
-        f.addMouseListener(this);
+        f.addMouseMotionListener(this);
 
         f.setSize(400, 400);
         f.setLayout(null);
         f.setVisible(true);
     }
 
-    public void mouseClicked(MouseEvent e)
+    public void mouseDragged(MouseEvent e)
     {
         Graphics g = f.getGraphics();
         g.setColor(Color.BLUE);
-        g.fillRect(e.getX(), e.getY(), 30, 30);
+        g.fillOval(e.getX(), e.getY(), 30, 30);
     }
 
     public static void main(String args[])
     {
-        new mouseadapterexample();
+        new mousemotionadapter();
     }
 }
