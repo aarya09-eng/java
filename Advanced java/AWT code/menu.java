@@ -1,46 +1,44 @@
 import java.awt.*;
 
-class menu extends Frame
+public class Menu extends Frame
 {
-    menu()
+    Menu()
     {
         MenuBar menubar = new MenuBar();
 
-        Menu FileMenu = new Menu("File");
+        Menu fileMenu = new Menu("File");
         Menu editMenu = new Menu("Edit");
 
-        MenuItem ItemNew = new MenuItem("New");
-        MenuItem ItemOpen = new MenuItem("Open");
-        MenuItem ItemExit = new MenuItem("Exit");
-        
-        FileMenu.add(ItemNew);
-        FileMenu.add(ItemOpen);
-        FileMenu.add(ItemExit);
+        MenuItem itemNew = new MenuItem("New");
+        MenuItem itemOpen = new MenuItem("Open");
+        MenuItem itemExit = new MenuItem("Exit");
 
-        FileMenu.addSepererator();
-        FileMenu.add(ItemExit);
+        fileMenu.add(itemNew);
+        fileMenu.add(itemOpen);
+        fileMenu.addSeparator();
+        fileMenu.add(itemExit);
 
         Menu formatSubMenu = new Menu("Format");
-        MenuItem ItemFont = new MenuItem("Font..");
-        MenuItem ItemColor = new MenuItem("Color..");
+        MenuItem itemFont = new MenuItem("Font...");
+        MenuItem itemColor = new MenuItem("Color...");
 
         formatSubMenu.add(itemFont);
         formatSubMenu.add(itemColor);
 
         MenuItem itemCopy = new MenuItem("Copy");
+
         editMenu.add(itemCopy);
-        editMenu.add(formalSubMenu);
+        editMenu.add(formatSubMenu);
 
-        menBar.add(FileMenu);
-        menuar.add(editMenu);
+        menubar.add(fileMenu);
+        menubar.add(editMenu);
 
-        setMenuBar(menuBar);
+        setMenuBar(menubar);
 
-        setSize(400,400);
+        setTitle("Menu Example");
+        setSize(400, 400);
         setLayout(null);
         setVisible(true);
-
-
     }
 
     public static void main(String args[])
